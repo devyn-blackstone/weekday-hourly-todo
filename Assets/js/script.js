@@ -33,8 +33,8 @@ for(var i = 0; i < time.length; i++) {
 
   save[i].addEventListener("click", function() {
     var dataid = this.getAttribute("data-id")
-    var memo = document.getElementById(dataid);
-    localStorage.setItem(dataid, memo.value);
+    var textarea = document.getElementById(dataid);
+    localStorage.setItem(dataid, textarea.value);
   }) 
 };
 
